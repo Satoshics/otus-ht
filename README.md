@@ -1,2 +1,1 @@
-"# otus-ht" 
-"# otus-ht" 
+There will be hometasks
