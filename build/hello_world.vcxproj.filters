@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\AnonyCrypt\OneDrive\Рабочий стол\cpp\move_me_out.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\AnonyCrypt\OneDrive\Рабочий стол\cpp\hello_world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\AnonyCrypt\OneDrive\Рабочий стол\cpp\move_me_out.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\AnonyCrypt\OneDrive\Рабочий стол\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B93A84E1-73F9-3295-84FF-72DC87247B8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5BD0F78F-1753-3C1A-9D11-7F12E7EF34DE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
