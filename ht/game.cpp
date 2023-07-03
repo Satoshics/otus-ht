@@ -2,7 +2,7 @@
 int main(){
     string nick;
     int num = rand_num();
-    cout << "Input your name "<< endl << ">>>";
+    cout << "Input your name "<< endl << ">>> ";
     cin >> nick;
     int ur_num;
     int attempts = 0;
