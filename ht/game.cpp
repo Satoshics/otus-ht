@@ -1,12 +1,12 @@
 #include "includes&&headers.h"
-int num = rand_num();
-int attempts = 0;
-bool resume;
 int main(){
     string nick;
-    cout << "Input your name \n>>>";
+    int num = rand_num();
+    cout << "Input your name "<< endl << ">>>";
     cin >> nick;
     int ur_num;
+    int attempts = 0;
+    bool resume;
     string answ;
     while(true){
         if (resume){
@@ -29,9 +29,8 @@ int main(){
             cin >> answ;
             if(answ == "y" || answ == "yes" || answ =="Y" || answ =="Yes"){
                 file_write(nick, attempts);
-                continue;
                 resume = 1;
-
+                continue;
             }
             else{
                 file_write(nick, attempts);
