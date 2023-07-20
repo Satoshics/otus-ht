@@ -3,7 +3,8 @@ int main(){
     string nick, answ;
     uint64_t num = rand_num();
     cout << "Input your nickname "<< endl << ">>> "; cin >> nick;
-    int ur_num =0; int attempts = 1;
+    int ur_num =0; 
+    uint64_t attempts = 1;
     bool resume = 0;
     do{
         if (resume){
