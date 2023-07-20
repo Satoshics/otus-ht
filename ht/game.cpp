@@ -1,11 +1,9 @@
-#include "includes&&headers.h"
+#include "includes.h"
 int main(){
-    string nick;
+    string nick, answ;
     uint64_t num = rand_num();
-    cout << "Input your name "<< endl << ">>> ";
-    cin >> nick;
-    int ur_num;
-    int attempts = 1;
+    cout << "Input your nickname "<< endl << ">>> "; cin >> nick;
+    int ur_num =0; int attempts = 1;
     bool resume = 0;
     do{
         if (resume){
@@ -13,6 +11,9 @@ int main(){
         num = rand_num(); 
         resume = 0;
         }
+        vector<player> data;
+        data.reserve(15);
+        file_read(data);
         cout << "Input number" << endl << ">>>";
         cin >> ur_num;
         if (ur_num > num){
@@ -24,14 +25,16 @@ int main(){
             attempts++;
         }
         else{
-            cout << "Congratulations, you won, you have spent" << attempts+1 << "attempts, do u want to play more?\n>>>";
+            cout << "Congratulations, you won, you have spent" << attempts << "attempts, do u want to play more?\n>>>";
             cin >> answ;
             if(answ == "y" || answ == "yes" || answ =="Y" || answ =="Yes"){
-                file_write(nick, attempts);
-                resume = 1;
+                file_write(data);
+                data[1].show(data);
+                resume = true;
             }
             else{
-                file_write(nick, attempts);
+                file_write(data);
+                data[1].show(data);
                 break;
                 
             }
