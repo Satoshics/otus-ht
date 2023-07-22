@@ -1,8 +1,7 @@
 #include "includes.h"
-int level()
+uint64_t level()
 {
-    int level;
-    int max_val;
+    uint64_t level; uint64_t max_val;
     cout << "Welcome to game guess the num" << endl << "level 0 - from 0 to 1000" <<  endl  << "level 1 - from 0 to 10000" << endl << "level 2 - from 0 to 1 000 000" << endl <<  "level 3 - from 0 to 10 000 000" << endl << "level 4 - from 0 to 1 000 000 000" << endl;
     cout << "Choose your level\n>>>";
     cin >> level;
