@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(05.data)
+
+add_executable(05.data
+	includes.h
+	class.cpp
+	main.cpp
+)
+if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR
+CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+target_compile_options(05.data PRIVATE
+-g
+-Wall
+-Wextra
+-pedantic
+)
+elseif (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+target_compile_options(05.data PRIVATE
+/EHsc
+/W4
+)
+endif()
+set_target_properties(05.data PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+)
+
